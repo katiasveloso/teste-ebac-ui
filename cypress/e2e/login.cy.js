@@ -21,7 +21,7 @@ context('Funcionalidade login', () =>{
         cy.get('.woocommerce-form > .button').click()
 
         
-        cy.get('.woocommerce-error').should('contain', 'Endereço de e-mail desconhecido.')
+        cy.get('.woocommerce-error').should('contain', 'Endereço de e-mail desconhecido. Verifique novamente ou tente seu nome de usuário.')
 
     })
 
