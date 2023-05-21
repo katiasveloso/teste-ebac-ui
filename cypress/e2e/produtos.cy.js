@@ -4,7 +4,7 @@
 describe('Funcionalidade Página de produtos', () =>{
 
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos')
+        cy.visit('produtos')
     });
     
     it('Deve selecionar um produto da lista', () => {
@@ -32,7 +32,7 @@ describe('Funcionalidade Página de produtos', () =>{
 
     });
 
-    it.('Deve adicionar produtos ao carrinho - Usando comando customizado', () =>{
+    it('Deve adicionar produtos ao carrinho - Usando comando customizado', () =>{
         cy.addProdutos('Ariel Roll Sleeve Sweatshirt', 'XL', 'Green', quantidade)
 
     });
